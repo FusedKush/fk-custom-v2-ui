@@ -6,4 +6,4 @@ My custom UI Theme for Atom.
 - [x] Extra Saturated
 - [x] **Not** well designed
 
-For use with [fk-custom-v2-syntax](https://github.com/FusedKush/fk-custom-v2-ui)
+For use with [fk-custom-v2-syntax](https://github.com/FusedKush/fk-custom-v2-syntax)

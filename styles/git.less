@@ -11,11 +11,13 @@
 .status-removed  { color: @text-color-error; }   // red
 .status-renamed  { color: @text-color-info; }    // blue
 
+// Fix icon color
 .github-Git-LargeIcon, .github-GitHub-LargeIcon {
   &::before {
     color: inherit;
   }
 }
+// Fix commit editor
 .github-CommitView-editor {
   background-color: @fk-tp;
 

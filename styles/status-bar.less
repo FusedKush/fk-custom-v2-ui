@@ -11,4 +11,22 @@
   color: @text-color;
   border-top: 1px solid @base-border-color;
   background-color: @tree-view-background-color;
+
+  div > .inline-block {
+    margin: 0;
+    padding: 0 8px;
+
+    &:hover, &:focus {
+      background-color:  fade(@base-background-color, 50%);
+      text-decoration: none;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+      }
+    }
+    &:active {
+      background-color: fade(@base-background-color, 75%);
+    }
+  }
 }

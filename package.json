@@ -1,0 +1,16 @@
+{
+  "name": "fk-custom-v2-ui",
+  "theme": "ui",
+  "version": "1.0.0",
+  "description": "My custom UI theme for Atom",
+  "keywords": [
+    "ui",
+    "theme",
+    "fk"
+  ],
+  "repository": "https://github.com/FusedKush/fk-custom-v2-ui",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

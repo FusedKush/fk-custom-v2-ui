@@ -5,12 +5,14 @@
 // Overrides: atom/atom/static/buttons.less
 
 
-button:not(.disabled) {
+button:not([disabled]):not(.disabled) {
   cursor: pointer !important;
 }
-button.disabled {
-  cursor: not-allowed !important;
-  opacity: 0.5 !important;
+button {
+  &[disabled], &.disabled {
+    cursor: not-allowed !important;
+    opacity: 0.5 !important;
+  }
 }
 .btn {
   color: lighten(@text-color, 6%);

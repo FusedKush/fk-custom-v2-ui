@@ -1,0 +1,29 @@
+// Custom themes for package components
+.bottom-dock () {
+  // Console lines
+  .output-container pre {
+    border: 1.5px solid rgba(255, 255, 255, 0.15);
+    border-left-color: currentColor;
+    border-radius: 0 4px 4px 0;
+    padding: 2px 8px;
+    background-color: rgba(0, 0, 0, 0.35);
+
+    &:first-child {
+      margin-top: 8.5px;
+    }
+
+    // Highlighting
+    &:not(.text-info):not(.text-warning) {
+      @colors: @text-color, @fk-purple, @fk-pink, @fk-yellow, @fk-cyan;
+
+      .main-loop(@i) when (@i < length(@colors)) {
+        &> span {
+          color: extract(@colors, @i);
+          .main-loop((@i+ 1));
+        }
+      }
+      .main-loop(0);
+    }
+  }
+}
+.bottom-dock() !important;

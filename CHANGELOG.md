@@ -1,3 +1,4 @@
-## 1.0.2
-- Increased component border radius
-- Additional styling for status bar icons
+## 1.0.3
+- Updated disabled button styles
+- Styles for BrowserDock package
+- Changed "info" colors
